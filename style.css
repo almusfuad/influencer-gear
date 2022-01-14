@@ -7,7 +7,7 @@ body {
 }
 
 
-/* navigation style */
+/* navigation style start */
 
 nav {
     display: flex;
@@ -51,7 +51,10 @@ nav>div>ul>li:hover {
 }
 
 
-/* section - 1, journey with influencer */
+/* navigation style finish here */
+
+
+/* section - 1, journey with influencer  start here*/
 
 #journey-start {
     display: flex;
@@ -99,6 +102,10 @@ nav>div>ul>li:hover {
     border-radius: 41px;
 }
 
+#prebook-button>span {
+    padding-left: 5px;
+}
+
 .half-width-right {
     flex-wrap: wrap;
     padding-right: 15%;
@@ -108,3 +115,6 @@ nav>div>ul>li:hover {
     cursor: pointer;
     background-color: darkmagenta;
 }
+
+
+/* section - 1, finish here */
