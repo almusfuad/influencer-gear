@@ -1,8 +1,6 @@
 body {
     margin: 0;
     position: relative;
-    width: 1440px;
-    height: 3306px;
     background-color: #FFFFFF;
 }
 
@@ -116,5 +114,130 @@ nav>div>ul>li:hover {
     background-color: darkmagenta;
 }
 
+#main-camera:hover {
+    cursor: crosshair;
+    transform: scale(1.4);
+    transition: transform 1s ease-in;
+}
+
 
 /* section - 1, finish here */
+
+
+/* branding section start here */
+
+#brand-name {
+    margin: 100px 165px;
+}
+
+#brand-container {
+    margin: 35px;
+    display: flex;
+    justify-content: space-around;
+    animation: 2s ease-in-out infinite alternate brand-container;
+}
+
+#brand-container:hover {
+    cursor: grab;
+    animation: step-end;
+}
+
+@keyframes brand-container {
+    from {
+        transform: translateX(-3vw);
+    }
+    to {
+        transform: translateX(calc(10vw - 10%));
+    }
+}
+
+hr .solid {
+    height: .5px;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+
+
+/* branding section end here */
+
+
+/* product section start here */
+
+#product-list {
+    margin: 0 196px;
+}
+
+#product-list>h1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#product-grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    /* background-color: rgb(243, 243, 243); */
+}
+
+.product-overview {
+    margin: 10px 10px;
+    width: 329px;
+    height: 476px;
+    background-color: #fcf7f7;
+    border-radius: 5px;
+}
+
+.product-image {
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+
+.product-image:hover {
+    cursor: crosshair;
+    transform: scale(1.4);
+    transition: transform 1s ease-in;
+}
+
+.pro-name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    /* identical to box height, or 143% */
+    font-feature-settings: 'liga' off;
+    /* Text / Gray 900 */
+    color: #18191F;
+}
+
+.pro-price {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    /* identical to box height, or 36px */
+    display: flex;
+    align-items: center;
+    /* Dark Color */
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.pro-details {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 143%;
+    /* or 20px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.018em;
+    /* Gray / 50 */
+    color: #787885;
+}
+
+#see-more-btn {
+    float: right;
+}
