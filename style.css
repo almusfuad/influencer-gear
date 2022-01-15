@@ -378,3 +378,81 @@ footer {
 
 
 /* footer section ends here */
+
+
+/* Responsivness */
+
+
+/* responsivness for mobile */
+
+@media only screen and (max-width:688px) {
+    #dropdown-menu {
+        display: none;
+    }
+    #nav-header {
+        display: flex;
+        justify-content: start;
+        size: .4em;
+        padding: 0%;
+        margin: 0%;
+    }
+    #journey-start {
+        display: grid;
+        align-content: space-between;
+        margin: 5%;
+    }
+    #half-width-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .7em;
+    }
+    #main-camera {
+        margin-top: 25%;
+    }
+    #brand-container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 25px;
+    }
+    #product-grid-view {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* padding-right: 50%; */
+    }
+    #product-list {
+        margin: 10%;
+    }
+    #see-more-btn {
+        float: right;
+    }
+    /* #features-product {
+        display: grid;
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);
+    } */
+    #feat-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 5%;
+        padding-bottom: 4%;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #foot-container {
+        padding: 0;
+        width: 224px;
+        margin: 0;
+        height: 111px;
+    }
+    #foot-title {
+        padding-top: 5%;
+        font-size: .9em;
+    }
+    #foot-det {
+        font-size: .7em;
+    }
+}
